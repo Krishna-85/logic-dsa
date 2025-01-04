@@ -247,11 +247,212 @@
 //     console.log(arr[i].charAt(0).toUpperCase()+arr[i].substring(1));
 // }
 
-//Q-51 
+//Q-58 Count Frequency 
 
-//Homework
+//accept a string and print the frequency of each character present in the string.
+
+// let s = prompt("enter a string")
+// let arr = new Array(26).fill(0)
+
+// for(let i=0; i<s.length; i++){
+//     let ascii = s.charCodeAt(i)
+//     arr[ascii-97] = arr [ascii-97]+1
+// }
+// for(let i=0; i<s.length; i++){
+//   if(arr[i]>0){
+//     console.log(s.fromCharCode(i+97)+"->"+arr[i]);
+    
+//   }
+    
+    
+// }
+//lexographic value comparision of Two values.
+
+//Q-60 Sort the words of sentenc.
 
 
+//  function abc (){
+//     console.log(arguments);
+//     console.log(this)
+    
+//  }
+//  abc(1,2,3,4,)      
 
+// let str  = "vaibhav 13331 VAIBHAV"
+// console.log(str)
 
+// let vow = 0;
+// let cons =0;
+// let sps = 0;
+// let num = 0;
+
+// for(let i=0; i<str.length-1; i++){
+//     if(str[i]=="a" || str[i]=="e" || str[i]=="i" || str[i]=="o" || str[i]=="u"){
+//         vow++
+//     }else if(str[i]== " "){
+//         sps++
+//     }else if(str[i] >=0 && str[i]<=9){
+//         num++
+//     }else{
+//         cons++
+//     }
+// }
+
+// console.log(`vowels ${vow} cons ${cons} space ${sps} numbers ${num}`);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// let str = VaIBHav 
+
+// let result = "";
+
+// for(let i=0; i<str.length; i++){
+//    let char = str.charCodeAt(i)
+//    if(ascii>=65 && ascii<=96){
+//     ans = ans + String.fromCharCode
+//    }
+// }
+
+//Find the largest value from array.
+
+// let arr = [50,10,21,85,79];
+// console.log(arr)
+
+// let max = arr[0];
+
+// for(let i=0; i<arr.length; i++){
+//    if(arr[i]>max){
+//       max = arr[i]
+//    }
+// }
+// console.log(max);
+
+//Array is sorted or not.
+
+// let arr = [10,20,300,40,50,60]
+// console.log(arr)
+
+// let isSorted = true;
+
+// for(let i=0; i<arr.length; i++){
+//    if(arr[i]>arr[i + 1]){
+//       isSorted = false;
+//       break;
+//    }
+// }
+// if(isSorted)
+//    console.log("array is sorted")
+// else console.log("array is not sorted")
+
+//Left Rotation.
+
+//  let arr = [1,2,3,4,5];
+
+//  let n = arr.length
+//  let temp = arr[0];
+//  for(let i=0; i<n-1; i++){
+//    arr[i] = arr[i+1];
+//  }
+//  arr[n-1] = temp 
+//  console.log(arr);
+ //
+
+//2D Array.
+
+// let arr = [
+//     [1,2,3],
+//     [5,6,7],
+//     [7,8,9],
+//     [10,11,12]
+// ];
+// for(let i=0; i<arr.length; i++){
+//     for(let j=0; j<arr[0].length; j++){
+//         console.log(arr[i][j]);
+        
+//     }
+    
+// }
+
+//Dynamic 2D Array.
+// let rows = 3, cols = 4
+// let arr =  Array.from({length:rows}, ()=> Array(cols) )
+// for(let i=0; i<arr.length; i++){
+//         for(let j=0; j<arr[0].length; j++){
+//        arr[i][j] = Number(prompt("enter a number"))
+            
+//         }
+        
+//     }
+//     console.log(arr);
+
+//Dynamic 3D arry rows, col.
+    
+// let rows = Number(prompt("enter Rows"))
+// let arr = new Array(rows)
+
+// for(let i=0; i<arr.length; i++){
+//     let col = Number(prompt("Enter col"))
+//     arr[i] = new Array(col)
+// }
+//  for(let i=0; i<arr.length; i++){
+//     for(let j=0; j<arr[0].length; j++){
+//         arr[i][j] = Number(prompt("enter a number"))
+//     }
+//  }
+// console.log(arr);
+
+//  let arr = [[1,2,3],[4,5,6],[7,8,9]]
+
+// let leftSum = 0 , rig0htSum = 0
+
+// for(let i=0; i<arr.length; i++){
+//     for(let j=0; j<arr[i].length; j++){
+//         if(i==j) leftSum += 
+//     }
+// }
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Find the Frequency of Elements.
+
+// let arr = [5,8,1,2,5,6,8,8,6,6,3,4,4]
+
+// for(let i=0; i<arr.length; i++){
+//     let count = 1;
+//     if(arr[i]!= -1){
+//         for(let j=i+1; j<arr.length; j++ ){
+//             if(arr[i] == arr[j]){
+//                 count++
+//                 arr[j]= -1
+//             }
+//         }
+                
+//         console.log(arr[i] + " element found " + count + " times");
+//     }
+// }
+  
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Find the sub array.
+
+let arr = [1,2,1,2,7,5,12]
+let count = 0;
+let sum = 12
+let maxlength = 0;
  
+for(let i=0; i<arr.length; i++){
+    let loopsum =0;
+    let len = 0;
+    for(let j =i; j<arr.length; j++){
+        loopsum+=arr[j]
+        len++
+        if(loopsum==sum && len>maxlength){
+    maxlength = len
+}
+    }
+    
+    
+}
+console.log(maxlength);
+
+
+    
+
