@@ -433,26 +433,310 @@
 
 //Find the sub array.
 
-let arr = [1,2,1,2,7,5,12]
-let count = 0;
-let sum = 12
-let maxlength = 0;
+// let arr = [1,2,1,2,7,5,12]
+// let count = 0;
+// let sum = 12
+// let maxlength = 0;
  
+// for(let i=0; i<arr.length; i++){
+//     let loopsum =0;
+//     let len = 0;
+//     for(let j =i; j<arr.length; j++){
+//         loopsum+=arr[j]
+//         len++
+//         if(loopsum==sum && len>maxlength){
+//     maxlength = len
+// }
+//     }
+    
+    
+// }
+// console.log(maxlength);
+
+// let size = Number(prompt("enter size of array"))
+// let arr = new Array(size)
+ 
+// for(let i=0; i<arr.length; i++ ){
+//      arr[i] = Number(prompt("enter value"))
+// }
+//    console.log(arr);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    
+// let size = Number(prompt("enter size of array"))
+// let arr = new Array(size)
+// let sum = 0;
+ 
+// for(let i=0; i<arr.length; i++ ){
+//      arr[i] = Number(prompt("enter value"))
+//      sum += arr[i]
+//      console.log(sum);
+// }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// let arr = [34,56,9,40,100]
+//  let max = arr[0]
+//  let secMax = Math.max(arr[0], arr[1])
+//  let greatest = Math.max(arr[0], arr[1])
+//  let secondGreatest = Math.min(arr[0], arr[1])
+// for(let i=0; i<arr.length; i++)
+//     if(arr[i]>greatest){
+
+//         secondGreatest = greatest
+//     greatest = arr[i]
+// }else if(arr[i]> secondGreatest && arr[i]<greatest ){
+//     secondGreatest = arr[i]
+  
+// }   
+// console.log(secondGreatest);
+    
+
+// Toggle characters
+
+// let str  = "VaiBHAv CHAuhaN"
+// let toggled = ""
+// for(let i=0; i<str.length; i++){
+//     let char = str[i]
+//   if(char===char.toUpperCase()){
+//         toggled +=char.toLowerCase() 
+//     }else{
+//         toggled += char.toUpperCase ()
+//     }
+// }
+
+// console.log(toggled);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Count Vowels and consonents.
+
+// let arr = [2,4,1,1,6,5];
+// let temp = 0;
+
+
+// for(let i=1; i<arr.length-1;i++){
+//     if((temp < arr[i] && arr[i]))
+// }
+
+
+//reversing an array.
+
+// let arr = [1,2,3,4,5]
+// console.log(arr)
+
+//  let i=0 , j= arr.length-1;
+
+//  while(i<j){
+//     let temp = arr[i]
+//     arr[i] = arr[j]
+//     arr[j] = temp;
+//     i++
+//     j--
+//  }
+// console.log(arr);
+
+
+//Left rotation.
+
+// let arr = [1,2,3,4,5]
+ 
+// let copy = arr[arr.length-1]
+
+
+//  for(let i=arr.length-1; i>=1; i--){
+//     arr[i] = arr[i-1]
+//  }
+
+//  arr[0] = copy
+//  console.log(arr);
+
+ 
+//  let firstname ="vaibhav"
+
+//  for(let i=0; i<firstname.length; i++){
+//    console.log(firstname.charAt(i));
+   
+// //  }
+// let str = "madam"
+// const reverse = (str)=>{
+ 
+//  let reversed = ""
+//  for(let i=str.length-1; i>=0; i--){
+//      reversed += str[i] 
+//     }
+//     return reversed
+//   }
+
+
+// let reversed = reverse(str)
+
+// if(str == reversed){
+//   console.log("pallindrome");
+  
+// }else{
+//   console.log("not pallindrome")
+// }
+
+//is pallindrome.
+
+// let str  = "Pari"
+// const ispallindrome = (str)=>{
+//   let i=0, j=str.length-1
+//   let ispall = true;
+//   while(i<j){
+//     if(str[i]!=str[j]){
+//       ispall = false;
+//       break;
+//     }
+//     i++
+//     j--
+//   }
+//   return ispall 
+// }
+
+// let ans = ispallindrome(str)
+// if(ans) console.log("give string is pallindrome");
+// else console.log("give string is not pallindrome");
+
+// let arr = [2,50,20,10,30,80]
+// const minmax = (arr)=>{
+//   let max = 0
+// for(let i=0; i<arr.length; i++){
+//   if(arr[i]>max){
+//     max = arr[i]
+//   }
+// }
+// console.log(max);
+// }
+
+// minmax(arr)
+
+// let minarr = [50,20,10,30,80]
+// const min = (arr)=>{
+//   let min = arr[0]
+// for(let i=1; i<arr.length; i++){
+//   if(arr[i]<min){
+//     min = arr[i]
+//   }
+// }
+// console.log(min);
+// }
+
+// min(minarr)
+
+// let nums1 = [1,2,3]
+// let nums2 = [4,5,6]
+
+// let ans = new Array(nums1.length+nums2.length)
+// let i=0
+// let j=0 , k=0
+// while(i<nums1.lengt &&nums2[j]){
+//     if(nums1[i]<nums2[j]){
+
+//         ans[k++] = nums1[i++]
+//     }else{
+//         ans[k++] =nums2[j++]
+//     }
+// }
+
+// while(i<nums1.length){
+//     ans[k++] = nums1[i++]
+// }
+// while(i<nums2.length){
+//     ans[k++] = nums2[j++]
+// }
+//    console.log(ans);
+
+// let arr = [10,50,40,30,80,100,20]
+// let key = 10;
+// let ans = -1;
+
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i]==key){
+//         ans = i
+//     }
+// }
+// if(ans === -1){
+//     console.log("Not Found")
+// }else{
+//     console.log("elemement fount at index " + ans)
+// }
+
+//  let arr = [10,20,60,80,10]
+//  let max =  -Infinity;
+//  let min = Infinity;
+//  for(let i=0; i<arr.length; i++){
+//     if(arr[i]>max){
+//         max = arr[i]
+//     }
+//     if(min >arr[i]){
+//         min = arr[i];
+//     }
+// }
+// console.log(max, min);
+
+
+// let arr = [2,4,10,15,18,20]
+// let key = 15;
+// let start = 0, end = arr.length-1
+
+// while(start <= end){
+//     let mid = (start + end ) /2
+//     if(arr[mid] == key ){
+//         console.log(mid);
+//     } 
+//     if(arr[mid]<key){
+//         start = mid+1
+//     }else{
+//         end = mid-1
+//     }
+        
+
+//     console.log(-1);
+// }
+
+// let arr = [10,12,80,65,12,10]
+// let set = new Set(arr)
+// console.log(set)
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Find The frequency of array using Map.
+
+// let arr = [2,1,2,3,4,5,6,7,8,9,4,5]
+// let map = new Map()
+// for(let i=0; i<arr.length; i++){
+//     if(map.has(arr[i])){
+//         map.set(arr[i], map.get(arr[i])+1)
+//     }else{
+//         map.set(arr[i], 1)
+//     }
+
+// }
+// console.log(map);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//In one line.
+
+// let arr = [2,1,2,3,4,5,6,7,8,9,4,5]
+
+// let map = new Map()
+
+// for(let i=0; i<arr.length; i++){
+//     map.set(arr[i], (map.get(arr[i])|| 0)+1)
+// }
+// console.log(map);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+let arr = [2,4,2,1,5,4,6,7,6,4,6]
+let map = new Map()
 for(let i=0; i<arr.length; i++){
-    let loopsum =0;
-    let len = 0;
-    for(let j =i; j<arr.length; j++){
-        loopsum+=arr[j]
-        len++
-        if(loopsum==sum && len>maxlength){
-    maxlength = len
+ 
 }
-    }
-    
-    
-}
-console.log(maxlength);
 
+ 
 
-    
 
