@@ -731,12 +731,55 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-let arr = [2,4,2,1,5,4,6,7,6,4,6]
-let map = new Map()
-for(let i=0; i<arr.length; i++){
- 
-}
+//Find the unique elements im array using map.
+
+// let arr = [2,4,2,1,5,4,6,7,6,4,6]
+// let map = new Map()
+// for(let i=0; i<arr.length; i++){
+//  if(map.has(arr[i]))map.set(arr[i], map.get(arr[i])+1)
+//     else map.set(arr[i], 1)
+// }
+// // Stroing Keys value. //For Looping In keys array.
+//  for(let key  of map.keys()){
+//     if(map.get(key)==1) console.log(key);
+    
+//  }
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// let map = new Map()
+
+// map.set("raj", 10)
+// map.set("vaibhav", 9)
+// map.set("krishna", 11)
+
+// for(let value of map.values()){
+//     console.log(value);
+    
+// }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// let arr = [2,4,5,8,7,1,2,4,5,2,4,6,8,9,1,0,10]
+
+// let map = new Map()
+
+// for(let i=0; i<arr.length; i++){
+//     if(map.has(arr[i]))map.get(arr[i]+1)
+//         else map.set(arr[i], 1)
+  
+// }
+// for(let key of  map.keys()){
+//     if(map.get(key)==1) console.log(key)
+// }
+
+let str = "hello"
+
+str = str.concat(" world")
+
+console.log(str);
+
 
  
-
-
