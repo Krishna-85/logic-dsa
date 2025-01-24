@@ -16,7 +16,8 @@
 // Print 1 To 5 Count,
 
 //+++++++++++++++++++++++++ Print The Sum +++++++++++++++++++++++++++++++++++++++++++++++
-// jo kuch bhi hold par rehta hai wo tab chlta hai jab function pop/backtrack hone par, this is called backTracking.
+// jo kuch bhi hold par rehta hai wo tab chlta hai jab function pop/backtrack hone par, 
+// this is called backTracking.
 
 // let n = Number(prompt("Enter a number"))
 // function sum(n){
@@ -157,4 +158,36 @@
 //Solved but consuming extra space.
 //==================================================\\
 
+//factor in loop with sorted array.
 
+// let n = Number(prompt("enter a number"))
+
+// let i;
+
+// for(i=1; i*i<n; i++){
+//     if(n%i==0) console.log(i)
+// }
+
+// if((i-n/i)==1) i--
+
+// for(;i>=1; i--){
+//     if(n%i==0) console.log(n/i)
+// }
+
+//=========================== Prime Number ======================================
+
+//  let n = Number(prompt("enter a number"))
+// let count = 0
+// if(n<=1) console.log("not prime")
+// for(let i =1; i<=n/2; i++){
+//     if(n%i==0) count++
+// }
+// if(count ==1) console.log("prime Number")
+//     else console.log("not prime number")
+
+// agar koi number 2 se leke apne square root tak devide nhi ho paya to iska mtlb wo aage bhi kabhi devide nhi ho payega.
+
+//================================= Prime Number Second Method ======================================
+
+  let n = Number(prompt("enter a number"))
+  
