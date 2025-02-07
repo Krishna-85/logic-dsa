@@ -186,20 +186,39 @@
 //     else console.log("not prime number")
 
 // agar koi number 2 se leke apne square root tak devide nhi ho paya to iska mtlb wo aage bhi kabhi devide nhi ho payega.
-
 //koii sa bhi odd number even number se nhi jata hai.
+
 //================================= Prime(odd) Number Second Method ======================================
 
+// let n = Number(prompt("enter a number"))
+// isPrime()
+// if(isPrime(n)) console.log("prime Number")
+//       else console.log("not prime number")
+// function isPrime(n){
+//   if(n<=1) return false
+//   if(n==2) return true
+//   if(n%2==0) return false
+//   for(let i=3; i<=Math.floor(Math.sqrt(n)); i+=2){
+//     if(n%i==0) return false
+//   }
+//   return true
+// }
+
+//============================================================================\\
+// Sieve of eratosthenes.
+
 let n = Number(prompt("enter a number"))
-isPrime()
-if(isPrime(n)) console.log("prime Number")
-      else console.log("not prime number")
-function isPrime(n){
-  if(n<=1) return false
-  if(n==2) return true
-  if(n%2==0) return false
-  for(let i=3; i<=Math.floor(Math.sqrt(n)); i+=2){
-    if(n%i==0) return false
+ checkPrime(n)
+function checkPrime(n){
+let arr = new Array(n+1).fill(true)
+for(let i=2; i<=Math.floor(Math.sqrt(n)); i++){
+if(arr[i]==true){
+  for(let j=i*i; j<=n; j+=1){
+    arr[j] = false
   }
-  return true
+}
+}
+for(let i=2; i<arr.length; i++){
+  if(arr[i]==true)console.log(i+" ")
+}
 }

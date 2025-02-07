@@ -775,11 +775,49 @@
 //     if(map.get(key)==1) console.log(key)
 // }
 
-let str = "hello"
 
-str = str.concat(" world")
+//Prime number Or Not 
 
-console.log(str);
+// var n  = 19
+
+// let count = 0
+
+// for(let i=0; i<=n; i++){
+//     if(n%i==0) count++
+// }
+// console.log(count == 2 ? "Prime Number": "Not prime number")
 
 
- 
+ //fibonacci series
+// let n = 8
+
+//  let a = 0;
+// let b = 1;
+// console.log(a);
+// console.log(b);
+// let c;
+// for(let i = 3; i<=n; i++){
+//     c = a+b
+//     a = b;
+//     b = c
+//     console.log(c);
+
+// }
+
+
+//Insertion Short Algorithim.
+
+let arr = [7,4,3,5,1,9]
+for(let i=0; i<arr.length; i++){
+    let key = arr[i]
+    let j = i-1
+    while(j>=0 && arr[j]>key){
+        arr[j+1]=arr[j]
+        j--
+    }
+    arr[j+1] = key
+}
+console.log(arr)
+        
+        
+   
