@@ -875,6 +875,21 @@
 
 // Selection Short Algorithim.
 
+let arr = [7,4,3,5,7,9]
+
+for(let i=0; i<arr.length-1; i++){
+    let minIndex = i
+    for(let j=i+1; j<arr.length; i++){
+        arr[j]<arr[minIndex]
+        minIndex = j
+    }
+    let temp = arr[minIndex]
+    arr[minIndex] = arr[i]
+    arr[i] = temp
+}
+console.log(arr)
+
+
 
 
 
