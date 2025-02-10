@@ -875,19 +875,62 @@
 
 // Selection Short Algorithim.
 
-let arr = [7,4,3,5,7,9]
+// let arr = [7,4,3,5,7,9]
 
-for(let i=0; i<arr.length-1; i++){
-    let minIndex = i
-    for(let j=i+1; j<arr.length; i++){
-        arr[j]<arr[minIndex]
-        minIndex = j
-    }
-    let temp = arr[minIndex]
-    arr[minIndex] = arr[i]
-    arr[i] = temp
-}
+// for(let i=0; i<arr.length-1; i++){
+//     let minIndex = i
+//     for(let j=i+1; j<arr.length; j++){
+//         if(arr[j]<arr[minIndex])
+//             minIndex = j
+//     }
+//     let temp = arr[minIndex]
+//     arr[minIndex] = arr[i]
+//     arr[i] = temp
+// }
+// console.log(arr)
+
+
+//============================================================================
+
+let arr = [7,4,3,1,5,9]
+
+divide(arr, 0, arr.length-1)
+
 console.log(arr)
+
+function divide(arr, first , last){
+    if(first<last){
+        let mid  = first + Math.floor((last-first)/2)
+        divide(arr, first, mid )
+        divide(arr, mid+1, last)
+        conquer(arr, first, mid, last)
+    }
+}
+
+function conquer(arr, first, mid, last){
+    let temp = new Array(last-first+1)
+    let idx1 = first , idx2 = mid+1, k=0
+    while(idx1<=mid && idx2<=last){
+        if(arr[idx1]<arr[idx2]){
+            temp[k] = arr[idx1]
+            idx1++
+        }else{
+            temp[k] = arr[idx2++]
+        }
+    }
+    while(idx1<=mid){
+        temp[k++] = arr[idx1++]
+    }
+    while(idx2<=last){
+        temp[k++] = arr[idx2++]
+    }
+    for(let i=0, j=first;i<temp.length; i++, j++){
+        arr[j] = temp[i]
+    }
+}
+
+//============================================================================
+
 
 
 
