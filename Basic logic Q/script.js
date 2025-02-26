@@ -892,49 +892,159 @@
 
 //============================================================================
 
-let arr = [7,4,3,1,5,9]
+// let arr = [7,4,3,1,5,9]
 
-divide(arr, 0, arr.length-1)
+// divide(arr, 0, arr.length-1)
 
-console.log(arr)
+// console.log(arr)
 
-function divide(arr, first , last){
-    if(first<last){
-        let mid  = first + Math.floor((last-first)/2)
-        divide(arr, first, mid )
-        divide(arr, mid+1, last)
-        conquer(arr, first, mid, last)
-    }
-}
+// function divide(arr, first , last){
+//     if(first<last){
+//         let mid  = first + Math.floor((last-first)/2)
+//         divide(arr, first, mid )
+//         divide(arr, mid+1, last )
+//         conquer(arr, first, mid, last)
+//     }
+// }
 
-function conquer(arr, first, mid, last){
-    let temp = new Array(last-first+1)
-    let idx1 = first , idx2 = mid+1, k=0
-    while(idx1<=mid && idx2<=last){
-        if(arr[idx1]<arr[idx2]){
-            temp[k] = arr[idx1]
-            idx1++
-        }else{
-            temp[k] = arr[idx2++]
-        }
-    }
-    while(idx1<=mid){
-        temp[k++] = arr[idx1++]
-    }
-    while(idx2<=last){
-        temp[k++] = arr[idx2++]
-    }
-    for(let i=0, j=first;i<temp.length; i++, j++){
-        arr[j] = temp[i]
-    }
-}
+// function conquer(arr, first, mid, last){
+//     let temp = new Array(last-first+1)
+//     let idx1 = first , idx2 = mid+1, k=0
+//     while(idx1<=mid && idx2<=last){
+//         if(arr[idx1]<arr[idx2]){
+//             temp[k] = arr[idx1]
+//             idx1++
+//         }else{
+//             temp[k] = arr[idx2++]
+//         }
+//     }
+//     while(idx1<=mid){
+//         temp[k++] = arr[idx1++]
+//     }
+//     while(idx2<=last){
+//         temp[k++] = arr[idx2++]
+//     }
+//     for(let i=0, j=first;i<temp.length; i++, j++){
+//         arr[j] = temp[i]
+//     }
+// }
 
 //============================================================================
 
 
+// let arr = [7,4,3,1,5,9]
+
+// quickSort(arr, 0, arr.length-1)
+                            //Time complexity                 // log(n)
+// function quickSort(arr, first , last ){
+// if(first<last){
+//     let pivotIdx = partition(arr, first, last)
+//     quickSort(arr, first, pivotIdx-1)
+//     quickSort(arr, pivotIdx+1, last)
+// }
+// }
+                            //Time complexity                   //O(n)
+// function partition(arr, first, last){
+//     let pivot = arr[last], j = first, i= first-1
+//     for(let j = first; j<last; j++){
+//         if(arr[j]<pivot){
+//             i++
+//             swap(arr, i, j)
+//         }
+//     }
+//     i++
+//     swap(arr, i, j, last)
+//     return i
+// }
+
+// function swap(arr, i, j){
+//     let temp = arr[i]
+//     arr[i] = arr[j]
+//     arr[j]=temp
+
+// }
 
 
+//=================================== Cyclic Sort =========================================
+
+// let arr  = [1,5,4,3,2,6]
+// let i =0
 
 
+// while(i<arr.length){
+//     let correctIdx = arr[i]-1
+//     if(arr[i] != arr[[correctIdx]]){
+//         let temp = arr[i]
+//         arr[i] = arr[correctIdx]
+//         arr[correctIdx] = temp
+//     }
+//     else i++
+// }
+//  console.log(arr)
 
-   
+//================================ Binary Search ============================================
+
+// let arr = [3,5,8,9,12,15,17,21,25]
+
+// let target = 21
+
+// let l = 0
+// let r = arr.length+1
+
+//  while(l<=r){
+//     let mid = Math.floor(l+r/2)
+//     if(arr[mid]==target) return mid
+
+//     else if(arr[mid]>target){
+//         r = mid-1
+//     }else l = mid+1
+
+//     return -1
+//  }
+
+ // Formula of getting mid = left+right/2 ========================================================
+
+
+//================================ Get the Frequency Using (Binary Search) ============================================
+
+// let arr = [2,3,1,1,2,3,2,1,5,6,6,]
+// let map = new Map();
+
+
+// for(let i = 0; arr.length; i++){
+//     if(map.has(arr[i])){
+//         map.set(arr[i], map.get(arr[i])+1)
+//     }
+//     else map.set(arr[i], 1)
+// }
+
+// console.log(map)
+
+//====================================== Binary search. ==========================================================
+
+// let arr = [15,27,41,85,95,100,102]
+// let target = 85;
+// let s = 0
+// let e = arr.length-1
+
+// let mid = 0;
+// let ans  = -1;
+
+// while(s<=e){
+//     let mid =Math.floor((s+e)/2);
+//     if(arr[mid]===target){
+//         ans = mid
+//         break;
+//     }else if(arr[mid]>target){
+//         e = mid-1
+//     }else{
+//         s = mid+1
+//     }
+// }
+
+
+// console.log(`Your targated Value is on Inedx:`, ans)
+
+
+//====================================== Bubble Short ==========================================================
+
